@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Mother's Day!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card" onclick="flipCard()">
+    <div class="card-inner">
+      <!-- English message on the front -->
+      <div class="card-front">
+        <h1>Happy Mother's Day 💐</h1>
+        <p>I LOVE YOU SO MUCH, Mom!</p>
+        <p>My Dearest Mumma,</p>
+        <p>I don’t think I say this enough, but I love you — deeply, endlessly, and with all my heart .oday, I just want to pause and pour my heart out to you, because you deserve to know how much you mean to me....</p>
+        <button id="continueBtn" onclick="continueButtonClicked(event)">Continue</button>
+      </div>
+        <button id="backBtn" onclick="goBack()">Back</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Audio -->
+  <audio autoplay loop>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Slideshow Modal -->
+  <div id="photoModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    
+    <!-- ❤️ Next Button -->
+    <button id="nextBtn" onclick="nextImage()">❤️ Next</button>
+    
+    <!-- Heart Animation Container -->
+    <div id="heart-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<a href="http://127.0.0.1:5500/chatbot-3d-site/animation%20letter%20to%20mom/index.html" target="_blank">
+    <button>💌 Read the Letter to Mom</button>
+  </a>
+  
+  <a href="http://127.0.0.1:5500/chatbot-3d-site/100%20reason/index.html" target="_blank">
+    <button>❤️ 100 Reasons Why I Love Mom</button>
+  </a>
+  
+  
+ 
